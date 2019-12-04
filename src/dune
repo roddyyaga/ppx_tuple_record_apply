@@ -1,0 +1,6 @@
+(library
+(name ppx_rapper)
+(libraries ppxlib base)
+(kind ppx_deriver)
+(preprocess (pps ppxlib.metaquot))
+)

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+synopsis: "Derives helper functions from record types for Rapper"
+maintainer: ["Roddy MacSween <github@roddymacsween.co.uk>"]
+authors: ["Roddy MacSween <github@roddymacsween.co.uk>"]
+license: "MIT"
+homepage: "https://github.com/roddyyaga/ppx_rapper"
+doc: "https://github.com/roddyyaga/ppx_rapper"
+bug-reports: "https://github.com/roddyyaga/ppx_rapper/issues"
+depends: [
+  "base"
+  "ppxlib"
+]
+build: [
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "@install"
+    "@runtest" {with-test}
+  ]
+]
+dev-repo: "git+https://github.com/roddyyaga/ppx_rapper.git"
