@@ -1,7 +1,6 @@
-# ppx_rapper
+# ppx_tuple_record_apply
 A ppx originally intended to be used as part of a simple ~~object~~ record mapper (Rapper, inspired by Dapper) based on
-[ppx_mysql](https://github.com/issuu/ppx_mysql). I've abandoned that project because the way OCaml handles labelled
-arguments combined with the way ppx\_mysql generates functions makes it infeasible.
+[ppx_mysql](https://github.com/issuu/ppx_mysql). I'm taking another approach to that using Caqti as the backend.
 
 ```ocaml
 type foo = { a : int; b : string; c : bool } [@@deriving rapper]
